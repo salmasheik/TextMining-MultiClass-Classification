@@ -1,0 +1,30 @@
+1.MultiClassMultiLabelSimple-GRU
+model.fit(x_train, y_train,batch_size=32, epochs=5,  validation_data=(x_test, y_test))
+loss: 0.1935 - acc: 0.9203 - val_loss: 0.2368 - val_acc: 0.8996
+
+manual
+Hate_Speech Recall: 0.929080
+Obscene Recall: 0.892918
+Insulting Recall: 0.784352
+Weighted Recall: 0.883339
+
+
+w/o manual calc
+Hate Speech Recall : 0.908947
+Obscene Recall : 0.914954
+Insulting Recall : 0.871641
+Average Recall : 0.898514
+
+2.MultiClassMultiLabelSimple
+loss: 0.2274 - acc: 0.9055 - val_loss: 0.2508 - val_acc: 0.8936
+
+3.MultiClassMultiLabelLSTM
+loss: 0.1460 - acc: 0.9424 - val_loss: 0.3035 - val_acc: 0.8854
+
+4.MultiClassMultiLabelCNN with activation="relu"
+ loss: 0.2312 - acc: 0.9089 - val_loss: 0.3163 - val_acc: 0.8778
+ 
+ with activation = "LeakyReLU"
+ loss: 0.1280 - acc: 0.9541 - val_loss: 0.4087 - val_acc: 0.8762
+ 
+ 
